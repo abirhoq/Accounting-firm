@@ -5,26 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact &amp; Book an Intro Call | Harbor &amp; Pine Accounting</title>
   <meta name="description" content="Request a free 20-minute intro call with Harbor &amp; Pine Accounting in Portland, Oregon. Discuss your bookkeeping, payroll support, or tax preparation needs.">
-  <link rel="canonical" href="contact.html">
+  <link rel="canonical" href="./contact.html">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Playfair Display & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Shared Header -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-container">
-      <a href="index.html" class="brand" aria-label="Harbor &amp; Pine Accounting Home">
+      <a href="./index.html" class="brand" aria-label="Harbor &amp; Pine Accounting Home">
         <svg class="brand-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" stroke-opacity="0.25"/>
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" stroke-opacity="0.3"/>
           <path d="M20 7L24 16H21V22H25L20 31L15 22H19V16H16L20 7Z" fill="currentColor"/>
-          <path d="M12 28C14.5 29.5 17 30 20 30C23 30 25.5 29.5 28 28" stroke="#C29B38" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 28C14.5 29.5 17 30 20 30C23 30 25.5 29.5 28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
         <div class="brand-text">
           <span class="brand-title">Harbor &amp; Pine</span>
@@ -45,17 +45,17 @@
         </svg>
       </button>
 
-      <!-- Nav Menu -->
+      <!-- Navigation Links -->
       <nav id="primary-nav" class="nav-menu-wrapper" aria-label="Primary navigation">
         <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="resources.html" class="nav-link">Resources</a></li>
-          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./services.html" class="nav-link">Services</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+          <li><a href="./resources.html" class="nav-link">Resources</a></li>
+          <li><a href="./contact.html" class="nav-link active" aria-current="page">Contact</a></li>
         </ul>
         <div class="nav-cta-wrapper">
-          <a href="contact.html" class="btn btn--accent btn--sm">Book a Call</a>
+          <a href="./contact.html" class="btn btn--accent btn--sm">Book a Call</a>
         </div>
       </nav>
     </div>
@@ -63,14 +63,13 @@
 
   <!-- Main Content -->
   <main id="main-content">
-    <!-- Page Header Intro -->
     <header class="page-intro">
       <div class="container">
         <div class="page-intro-content">
-          <span class="badge badge--pine">Start the Conversation</span>
+          <span class="badge">Consultation</span>
           <h1>Book a Free 20-Minute Intro Call</h1>
           <p class="lead">
-            We are here to discuss your current financial setup, explain how our monthly cadence works, and answer any questions you have about partnering together.
+            We are here to discuss your current financial setup, explain how our monthly cadence works, and answer any questions about partnering together.
           </p>
         </div>
       </div>
@@ -81,16 +80,16 @@
       <div class="container">
         <div class="contact-layout">
           
-          <!-- Column 1: Intro Call Request Form -->
+          <!-- Column 1: Request Form -->
           <div>
             <div class="form-card">
-              <span class="badge">Consultation Request</span>
-              <h2 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Intro-Call Request Form</h2>
-              <p style="margin-bottom: 1.75rem; font-size: 0.94rem;">
-                Submit the form below, and we will follow up with scheduling links to confirm a convenient 20-minute video or phone conversation.
+              <span class="badge">Inquiry Form</span>
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.35rem;">Intro-Call Request Form</h2>
+              <p style="margin-bottom: 1.5rem; font-size: 0.92rem;">
+                Submit the form below, and we will follow up with scheduling options for a 20-minute video or phone conversation.
               </p>
 
-              <!-- Hidden status banners until submitted -->
+              <!-- Status Alerts: Strictly hidden until submitted -->
               <div id="form-error-alert" class="form-alert form-alert--error" role="alert" aria-live="assertive"></div>
               <div id="form-success-alert" class="form-alert form-alert--success" role="status" aria-live="polite"></div>
 
@@ -99,7 +98,7 @@
                 <div class="form-row">
                   <div class="form-group">
                     <label for="name">
-                      Full Name <span class="required-star" aria-hidden="true">*</span>
+                      Full Name <span style="color: var(--color-error);" aria-hidden="true">*</span>
                     </label>
                     <input 
                       type="text" 
@@ -115,7 +114,7 @@
 
                   <div class="form-group">
                     <label for="email">
-                      Email Address <span class="required-star" aria-hidden="true">*</span>
+                      Email Address <span style="color: var(--color-error);" aria-hidden="true">*</span>
                     </label>
                     <input 
                       type="email" 
@@ -134,7 +133,7 @@
                 <div class="form-row">
                   <div class="form-group">
                     <label for="phone">
-                      Phone Number <span class="required-star" aria-hidden="true">*</span>
+                      Phone Number <span style="color: var(--color-error);" aria-hidden="true">*</span>
                     </label>
                     <input 
                       type="tel" 
@@ -150,7 +149,7 @@
 
                   <div class="form-group">
                     <label for="business_type">
-                      Business Type <span class="required-star" aria-hidden="true">*</span>
+                      Business Type <span style="color: var(--color-error);" aria-hidden="true">*</span>
                     </label>
                     <select id="business_type" name="business_type" class="select-field" required>
                       <option value="" disabled selected>Select business structure...</option>
@@ -159,13 +158,13 @@
                       <option value="Multi-Member LLC / Partnership">Multi-Member LLC / Partnership</option>
                       <option value="S-Corporation">S-Corporation</option>
                       <option value="Pre-Launch / New Venture">Pre-Launch / New Venture</option>
-                      <option value="Other / Non-Profit">Other / Creative Practice</option>
+                      <option value="Other / Creative Practice">Other / Creative Practice</option>
                     </select>
                     <div class="field-error-message">Please select your business structure.</div>
                   </div>
                 </div>
 
-                <!-- Row 3: Primary Service Needed & Preferred Contact Method -->
+                <!-- Row 3: Primary Area of Interest & Preferred Contact Method -->
                 <div class="form-row">
                   <div class="form-group">
                     <label for="service">Primary Area of Interest</label>
@@ -175,7 +174,6 @@
                       <option value="Payroll Support">Payroll Support &amp; Compliance</option>
                       <option value="Small Business Advisory">Small Business Advisory</option>
                       <option value="Comprehensive Package">Comprehensive Package (Bookkeeping + Tax)</option>
-                      <option value="Prior Period Cleanup">Prior Period Cleanup Diagnostic</option>
                     </select>
                   </div>
 
@@ -184,7 +182,7 @@
                     <select id="preferred_contact" name="preferred_contact" class="select-field">
                       <option value="Email" selected>Email</option>
                       <option value="Phone Call">Phone Call</option>
-                      <option value="Video Conference">Video Conference</option>
+                      <option value="Video Call">Video Call</option>
                     </select>
                   </div>
                 </div>
@@ -192,21 +190,17 @@
                 <!-- Row 4: Message -->
                 <div class="form-group">
                   <label for="message">
-                    How Can We Help? <span class="required-star" aria-hidden="true">*</span>
+                    How Can We Help? <span style="color: var(--color-error);" aria-hidden="true">*</span>
                   </label>
                   <textarea 
                     id="message" 
                     name="message" 
                     class="textarea-field" 
                     rows="4" 
-                    placeholder="Briefly tell us about your business, current accounting software (QuickBooks, Xero, spreadsheets, etc.), and what you are looking for..." 
+                    placeholder="Briefly describe your business, existing software (QuickBooks, Xero, spreadsheets), and what you are looking for..." 
                     required
                   ></textarea>
-                  <div class="field-error-message">Please write a brief message (at least 10 characters).</div>
-                </div>
-
-                <div style="margin-bottom: 1.5rem; font-size: 0.8rem; color: var(--color-text-subtle);">
-                  🔒 Your contact information is never shared or sold. This concept form connects safely to Formspree or simulates submission for demonstration.
+                  <div class="field-error-message">Please enter a brief message (at least 10 characters).</div>
                 </div>
 
                 <button type="submit" class="btn btn--primary" style="width: 100%;">
@@ -219,17 +213,16 @@
             </div>
           </div>
 
-          <!-- Column 2: Contact Details & Office Information -->
+          <!-- Column 2: Contact Info & Address -->
           <div class="contact-sidebar">
             <div class="contact-info-card">
-              <span class="badge badge--pine">Studio Details</span>
-              <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Portland Studio</h2>
-              <p style="font-size: 0.92rem; color: var(--color-text-muted);">
+              <span class="badge">Studio Info</span>
+              <h2 style="font-size: 1.35rem; margin-bottom: 0.35rem;">Portland Studio</h2>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted);">
                 Located in Downtown Portland, offering remote cloud collaboration across Oregon and in-person consultations by appointment.
               </p>
 
               <div class="contact-detail-list">
-                <!-- Detail 1: Address -->
                 <div class="contact-detail-item">
                   <div class="contact-detail-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -238,15 +231,15 @@
                     </svg>
                   </div>
                   <div>
-                    <div class="contact-detail-label">Studio Address</div>
+                    <div class="contact-detail-label">Office Address</div>
                     <div class="contact-detail-value">
                       742 SW Morrison Street, Suite 410<br>
-                      Portland, Oregon 97205
+                      Portland, OR 97205 (Sample address)<br>
+                      <span style="font-size: 0.85rem; color: var(--color-text-subtle);">Adjacent to Pioneer Courthouse Square</span>
                     </div>
                   </div>
                 </div>
 
-                <!-- Detail 2: Phone -->
                 <div class="contact-detail-item">
                   <div class="contact-detail-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -254,14 +247,13 @@
                     </svg>
                   </div>
                   <div>
-                    <div class="contact-detail-label">Telephone</div>
+                    <div class="contact-detail-label">Phone</div>
                     <div class="contact-detail-value">
                       <a href="tel:5035550194">(503) 555-0194</a>
                     </div>
                   </div>
                 </div>
 
-                <!-- Detail 3: Email -->
                 <div class="contact-detail-item">
                   <div class="contact-detail-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -270,14 +262,13 @@
                     </svg>
                   </div>
                   <div>
-                    <div class="contact-detail-label">Direct Inquiries</div>
+                    <div class="contact-detail-label">Email</div>
                     <div class="contact-detail-value">
                       <a href="mailto:hello@harborandpine.example">hello@harborandpine.example</a>
                     </div>
                   </div>
                 </div>
 
-                <!-- Detail 4: Hours -->
                 <div class="contact-detail-item">
                   <div class="contact-detail-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -288,24 +279,18 @@
                   <div>
                     <div class="contact-detail-label">Office Hours</div>
                     <div class="contact-detail-value">
-                      Monday &ndash; Thursday: 9:00 AM &ndash; 5:00 PM PST<br>
-                      Friday: 9:00 AM &ndash; 2:00 PM PST<br>
-                      Saturday &ndash; Sunday: Closed
+                      Mon–Fri, 9:00 AM – 5:00 PM PT
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Neighborhood / Transit Note Card -->
-            <div class="contact-info-card" style="background-color: var(--color-surface-tint); border-color: var(--color-accent-border);">
-              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-navy-800);">Location &amp; Transit</h3>
-              <p style="font-size: 0.88rem; color: var(--color-navy-600); margin-bottom: 0.75rem;">
-                Conveniently situated adjacent to Pioneer Courthouse Square with direct connections to all MAX Light Rail lines and Portland Streetcar routes.
+            <div class="contact-info-card" style="background-color: var(--color-surface-subtle); border-color: var(--color-border);">
+              <h3 style="font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--color-navy-800);">Transit &amp; Parking</h3>
+              <p style="font-size: 0.88rem; color: var(--color-navy-600); margin-bottom: 0;">
+                Located near Pioneer Courthouse Square with convenient access to MAX Light Rail lines and Portland Streetcar stops.
               </p>
-              <div style="font-size: 0.8rem; color: var(--color-text-subtle); font-style: italic;">
-                * In-person consultations are available by prior appointment during standard office hours.
-              </div>
             </div>
           </div>
 
@@ -318,13 +303,12 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Col 1: Brand & Concept Note -->
         <div class="footer-brand">
           <div class="brand">
-            <svg class="brand-icon" style="color: #4E8775;" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" stroke-opacity="0.25"/>
+            <svg class="brand-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" stroke-opacity="0.3"/>
               <path d="M20 7L24 16H21V22H25L20 31L15 22H19V16H16L20 7Z" fill="currentColor"/>
-              <path d="M12 28C14.5 29.5 17 30 20 30C23 30 25.5 29.5 28 28" stroke="#C29B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 28C14.5 29.5 17 30 20 30C23 30 25.5 29.5 28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
             <div class="brand-text">
               <span class="brand-title">Harbor &amp; Pine</span>
@@ -332,56 +316,51 @@
             </div>
           </div>
           <p class="footer-brand-desc">
-            Thoughtful bookkeeping, payroll support, tax preparation, and small business advisory for independent Pacific Northwest ventures.
+            Bookkeeping, payroll support, tax preparation, and small business advisory for independent Pacific Northwest ventures.
           </p>
         </div>
 
-        <!-- Col 2: Navigation Links -->
         <div>
           <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="services.html" class="footer-link">Services &amp; Pricing</a></li>
-            <li><a href="about.html" class="footer-link">About Our Practice</a></li>
-            <li><a href="resources.html" class="footer-link">Resources &amp; Articles</a></li>
-            <li><a href="contact.html" class="footer-link">Contact &amp; Intro Call</a></li>
+            <li><a href="./index.html" class="footer-link">Home</a></li>
+            <li><a href="./services.html" class="footer-link">Services &amp; Pricing</a></li>
+            <li><a href="./about.html" class="footer-link">About Our Practice</a></li>
+            <li><a href="./resources.html" class="footer-link">Resources &amp; Articles</a></li>
+            <li><a href="./contact.html" class="footer-link">Contact &amp; Intro Call</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Services -->
         <div>
           <h4 class="footer-col-title">Services</h4>
           <ul class="footer-links">
-            <li><a href="services.html#bookkeeping" class="footer-link">Monthly Bookkeeping</a></li>
-            <li><a href="services.html#payroll" class="footer-link">Payroll Support</a></li>
-            <li><a href="services.html#tax-prep" class="footer-link">Tax Preparation</a></li>
-            <li><a href="services.html#advisory" class="footer-link">Small Business Advisory</a></li>
+            <li><a href="./services.html#bookkeeping" class="footer-link">Monthly Bookkeeping</a></li>
+            <li><a href="./services.html#payroll" class="footer-link">Payroll Support</a></li>
+            <li><a href="./services.html#tax-prep" class="footer-link">Tax Preparation</a></li>
+            <li><a href="./services.html#advisory" class="footer-link">Small Business Advisory</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Fictional Office & Hours -->
-        <div class="footer-contact-info">
-          <h4 class="footer-col-title">Portland Studio</h4>
-          <p>742 SW Morrison Street, Suite 410<br>Portland, Oregon 97205</p>
-          <p><strong>Phone:</strong> <a href="tel:5035550194" class="footer-link">(503) 555-0194</a></p>
-          <p><strong>Email:</strong> <a href="mailto:hello@harborandpine.example" class="footer-link">hello@harborandpine.example</a></p>
-          <p><strong>Hours:</strong> Mon–Thu 9am–5pm PST, Fri 9am–2pm PST</p>
+        <div>
+          <h4 class="footer-col-title">Office &amp; Hours</h4>
+          <p style="margin-bottom: 0.5rem; color: #94A3B8;">742 SW Morrison Street, Suite 410<br>Portland, OR 97205 (Sample address)</p>
+          <p style="margin-bottom: 0.5rem; color: #94A3B8;"><strong>Phone:</strong> <a href="tel:5035550194" class="footer-link">(503) 555-0194</a></p>
+          <p style="margin-bottom: 0.5rem; color: #94A3B8;"><strong>Email:</strong> <a href="mailto:hello@harborandpine.example" class="footer-link">hello@harborandpine.example</a></p>
+          <p style="color: #94A3B8;"><strong>Hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM PT</p>
         </div>
       </div>
 
-      <!-- Bottom Legal & Mandatory Concept Disclaimer -->
       <div class="footer-bottom">
         <div>
           <span class="footer-disclaimer-highlight">Concept project by Abir Hoq. Not a real firm.</span>
-          <span>· Created for portfolio demonstration purposes only.</span>
         </div>
         <div>
-          <span>All profiles, rates, and scenarios are fictional concept representations.</span>
+          <span>Sample profiles, illustrative pricing tiers, and educational mockups.</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
