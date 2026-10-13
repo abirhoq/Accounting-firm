@@ -1,4 +1,4 @@
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mzedanor";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
 
 /**
  * Harbor & Pine Accounting - Client Scripts
